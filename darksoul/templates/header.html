@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="static/main.js">
+    <link rel="stylesheet" href="static/section.css">
+    <link rel="stylesheet" href="static/work.css">
+
+
+</head>
+
+<body  style="    color: white;background: black;">
+    <!-- Header Starts -->
+    <header class="Header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><b><div id="comp-lj32b29x" class="comp-lj32b29x YzqVVZ wixui-column-strip__column"><div id="bgLayers_comp-lj32b29x" data-hook="bgLayers" class="MW5IWV"><div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div><div id="bgMedia_comp-lj32b29x" class="VgO9Yg"></div></div><div data-mesh-id="comp-lj32b29xinlineContent" data-testid="inline-content" class=""><div data-mesh-id="comp-lj32b29xinlineContent-gridContainer" data-testid="mesh-container-content"><div id="comp-lj32b2a1" class="KcpHeO tz5f0K comp-lj32b2a1 wixui-rich-text" data-testid="richTextElement" style="visibility: inherit;" data-angle="0" data-angle-style-location="style" data-screen-in-hide="done"><p class="font_6 wixui-rich-text__text" style="line-height:1.41em; text-align:left; font-size:22px;"><span style="letter-spacing:normal;" class="wixui-rich-text__text"><span class="text-white"><span style="font-size:34px;" class="wixui-rich-text__text"><span style="font-family:sacramento,cursive;" class="wixui-rich-text__text">Sanya Masson</span>&nbsp;</span>PHOTOGRAPHY</span></span></p></div></div></div></div></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" class"active" class"text-white" href="">Home</a>
+                        <a class="nav-link" href="About">About</a>
+                        <a class="nav-link" href="mywork">My Work</a>
+                        <a class="nav-link" href="myservices">My Services</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+ 
+{% if messages %}
+{% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}</li>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          {% endfor %}
+          {% endif %}
+    </header>

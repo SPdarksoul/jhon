@@ -1,0 +1,118 @@
+.about {
+    border: 1rem solid white;
+    display: flex;
+    padding: 2rem 2rem;
+    margin:2rem 2rem;
+}
+
+
+.text span{
+    /* border: 2px solid whitw;
+    display: inline;
+    position: relative; */
+ font-size: 1.5rem;   
+ margin: 0rem 2rem;
+ padding: 2rem 2rem;
+}
+.button{
+    padding: 1rem 1rem;
+    margin: 2rem 2rem;
+    font-size: 2rem;
+
+}
+.button:hover{
+    background: red;
+}
+.about img{
+    padding: 2rem 2rem;
+    margin: 0rem 2rem;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+/* h1 {
+color: #fff;
+text-align: center;
+font-weight: 600;
+} */
+
+#slider {
+
+display:flex;
+position: relative;
+overflow: hidden;
+margin: 20px auto 0 auto;
+border-radius: 4px;
+place-items: center;
+}
+
+#slider ul {
+display:flex;
+position: relative;
+margin:1rem 1rem;
+padding:1rem 1rem;
+height: 200px;
+list-style: none;
+width: 500px;
+height: 700px;
+place-items: center;
+/* overflow: hidden;  */
+animation:scroll 20s linear infinite;
+
+
+}
+@keyframes scroll {
+0%{
+    transform: translate(0);
+}
+100%{
+    transform: translate(calc(-250px*9));
+}
+
+}
+
+#slider ul li {
+border: 1rem solid white;
+position: relative;
+display: flex;
+float: left;
+/* margin: 2rem 2rem;
+padding:2rem 2rem; */
+
+/* background: #ccc; */
+text-align: center;
+line-height: 300px;
+}
+/* CONTACT SECTION START */
+.contact{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-family: cursive;
+margin: 2rem 2rem;
+padding: 2rem 2rem;
+
+}
+#form{
+    /* border: 2rem solid white; */
+    padding:2rem 2rem;
+    display: flex;
+    }
+    .inner-form{
+    /* border: 2px solid red; */
+         position: relative;
+        display:flex;
+    } 
+    .outer{
+        width: 100rem;
+        /* border: 2px solid green; */
+        padding: 4rem 4rem;
+         margin: 4rem 4rem ;
+    }
+    .outer h1{
+        font-size: 4rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .outer p{
+        font-size: 1.5rem;
+        font-family: cursive;
+    }
+/* BUTTON SECTION START  */
